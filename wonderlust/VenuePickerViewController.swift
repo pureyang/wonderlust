@@ -12,7 +12,12 @@ class VenuePickerViewController: UIViewController {
 
     var isMenuExpanded = false
 
+    @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var pickerView: UIView!
+    
+    @IBOutlet weak var place1ImageView: UIImageView!
+    @IBOutlet weak var place1DetailImageView: UIImageView!
+    
     var pickerViewOriginalCenter: CGPoint!
     
     override func viewDidLoad() {
@@ -20,6 +25,8 @@ class VenuePickerViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         pickerViewOriginalCenter = pickerView.center
+        
+        scrollView.contentSize = CGSize(width: place1ImageView.image!.width, height: place1ImageView.image!.height+place1DetailImageView.image!.height)
     }
 
     override func didReceiveMemoryWarning() {
@@ -39,7 +46,6 @@ class VenuePickerViewController: UIViewController {
     */
 
     @IBAction func onMenuTap(sender: AnyObject) {
-        print("menutapped")
         
         if (!isMenuExpanded) {
             // collapse menu

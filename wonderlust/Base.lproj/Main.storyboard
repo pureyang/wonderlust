@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="hKp-R6-4Mn">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="hKp-R6-4Mn">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
     </dependencies>
     <scenes>
         <!--City Picker View Controller-->
@@ -122,22 +122,6 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="PlacePicker" id="ozO-4C-vXA">
-                                        <rect key="frame" x="0.0" y="21" width="320" height="531"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                    </imageView>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="LondonEye1" id="Aqh-fh-5SO">
-                                        <rect key="frame" x="18" y="54" width="285" height="190"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                    </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="London Eye" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="cgS-ma-Ldg">
-                                        <rect key="frame" x="33" y="245" width="90" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="GJu-kZ-xPp">
                                         <rect key="frame" x="8" y="21" width="30" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -145,6 +129,20 @@
                                             <action selector="onMenuTap:" destination="11Z-PU-bOW" eventType="touchUpInside" id="uDC-R4-PZ0"/>
                                         </connections>
                                     </button>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="brV-xG-wrj">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="Card1-Louisiana" id="SHr-39-S3g">
+                                                <rect key="frame" x="0.0" y="8" width="320" height="472"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                            </imageView>
+                                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="Louisianadetailtext" id="4zB-ZJ-SEB">
+                                                <rect key="frame" x="0.0" y="473" width="320" height="594"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                            </imageView>
+                                        </subviews>
+                                    </scrollView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
@@ -154,6 +152,9 @@
                     <navigationItem key="navigationItem" id="R51-Na-3Sk"/>
                     <connections>
                         <outlet property="pickerView" destination="PTC-iY-t2R" id="Vil-74-4Gh"/>
+                        <outlet property="place1DetailImageView" destination="4zB-ZJ-SEB" id="Qbb-KV-aS0"/>
+                        <outlet property="place1ImageView" destination="SHr-39-S3g" id="Mum-VJ-9fF"/>
+                        <outlet property="scrollView" destination="brV-xG-wrj" id="zfh-ZD-2Qf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="esp-ad-7lM" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -181,10 +182,10 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Card1-Louisiana" width="990" height="1449"/>
         <image name="CityPicker" width="595" height="906"/>
         <image name="CitySummary" width="534" height="880"/>
-        <image name="LondonEye1" width="620" height="349"/>
-        <image name="PlacePicker" width="529" height="879"/>
+        <image name="Louisianadetailtext" width="375" height="694"/>
         <image name="london_cover" width="1920" height="1080"/>
     </resources>
     <inferredMetricsTieBreakers>
