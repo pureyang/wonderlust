@@ -26,7 +26,7 @@ class VenuePickerViewController: UIViewController {
         // Do any additional setup after loading the view.
         pickerViewOriginalCenter = pickerView.center
         
-        scrollView.contentSize = CGSize(width: place1ImageView.image!.width, height: place1ImageView.image!.height+place1DetailImageView.image!.height)
+        scrollView.contentSize = CGSize(width: place1ImageView.image!.size.width, height: place1ImageView.image!.size.height+place1DetailImageView.image!.size.height)
     }
 
     override func didReceiveMemoryWarning() {
