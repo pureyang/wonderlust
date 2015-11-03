@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A4A88E6F1BDB4E6C00601272 /* CityPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A88E6E1BDB4E6C00601272 /* CityPickerViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		A4A88E711BDB4E7B00601272 /* CitySummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A88E701BDB4E7B00601272 /* CitySummaryViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		A4A88E731BDB4E8900601272 /* VenuePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A88E721BDB4E8900601272 /* VenuePickerViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		A410400C1BE292A500A49031 /* VenueDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A410400B1BE292A500A49031 /* VenueDetailViewController.swift */; };
+		A4A88E6F1BDB4E6C00601272 /* CityPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A88E6E1BDB4E6C00601272 /* CityPickerViewController.swift */; };
+		A4A88E711BDB4E7B00601272 /* CitySummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A88E701BDB4E7B00601272 /* CitySummaryViewController.swift */; };
+		A4A88E731BDB4E8900601272 /* VenuePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A88E721BDB4E8900601272 /* VenuePickerViewController.swift */; };
 		A4D4552B1BD94FA5007B6DD1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D4552A1BD94FA5007B6DD1 /* AppDelegate.swift */; };
 		A4D4552D1BD94FA5007B6DD1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D4552C1BD94FA5007B6DD1 /* ViewController.swift */; };
 		A4D455301BD94FA5007B6DD1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4D4552E1BD94FA5007B6DD1 /* Main.storyboard */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A410400B1BE292A500A49031 /* VenueDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VenueDetailViewController.swift; sourceTree = "<group>"; };
 		A4A88E6E1BDB4E6C00601272 /* CityPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityPickerViewController.swift; sourceTree = "<group>"; };
 		A4A88E701BDB4E7B00601272 /* CitySummaryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CitySummaryViewController.swift; sourceTree = "<group>"; };
 		A4A88E721BDB4E8900601272 /* VenuePickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VenuePickerViewController.swift; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 				A4A88E6E1BDB4E6C00601272 /* CityPickerViewController.swift */,
 				A4A88E701BDB4E7B00601272 /* CitySummaryViewController.swift */,
 				A4A88E721BDB4E8900601272 /* VenuePickerViewController.swift */,
+				A410400B1BE292A500A49031 /* VenueDetailViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -275,6 +278,7 @@
 				A4A88E711BDB4E7B00601272 /* CitySummaryViewController.swift in Sources */,
 				A4D4552D1BD94FA5007B6DD1 /* ViewController.swift in Sources */,
 				A4D4552B1BD94FA5007B6DD1 /* AppDelegate.swift in Sources */,
+				A410400C1BE292A500A49031 /* VenueDetailViewController.swift in Sources */,
 				A4A88E731BDB4E8900601272 /* VenuePickerViewController.swift in Sources */,
 				A4A88E6F1BDB4E6C00601272 /* CityPickerViewController.swift in Sources */,
 			);

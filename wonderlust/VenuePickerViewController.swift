@@ -12,7 +12,6 @@ class VenuePickerViewController: UIViewController {
 
     var isMenuExpanded = false
 
-    @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var pickerView: UIView!
     
     @IBOutlet weak var place1ImageView: UIImageView!
@@ -25,8 +24,6 @@ class VenuePickerViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         pickerViewOriginalCenter = pickerView.center
-        
-        scrollView.contentSize = CGSize(width: place1ImageView.image!.size.width, height: place1ImageView.image!.size.height+place1DetailImageView.image!.size.height)
     }
 
     override func didReceiveMemoryWarning() {
