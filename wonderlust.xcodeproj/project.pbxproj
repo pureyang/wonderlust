@@ -39,6 +39,8 @@
 
 /* Begin PBXFileReference section */
 		A410400B1BE292A500A49031 /* VenueDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VenueDetailViewController.swift; sourceTree = "<group>"; };
+		A485FEF01BE946BC00B5534B /* DIN-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DIN-Bold.otf"; sourceTree = "<group>"; };
+		A485FEF11BE9474700B5534B /* DINCond-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DINCond-Bold.otf"; sourceTree = "<group>"; };
 		A4A88E6E1BDB4E6C00601272 /* CityPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityPickerViewController.swift; sourceTree = "<group>"; };
 		A4A88E701BDB4E7B00601272 /* CitySummaryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CitySummaryViewController.swift; sourceTree = "<group>"; };
 		A4A88E721BDB4E8900601272 /* VenuePickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VenuePickerViewController.swift; sourceTree = "<group>"; };
@@ -116,6 +118,8 @@
 		A4D455291BD94FA5007B6DD1 /* wonderlust */ = {
 			isa = PBXGroup;
 			children = (
+				A485FEF01BE946BC00B5534B /* DIN-Bold.otf */,
+				A485FEF11BE9474700B5534B /* DINCond-Bold.otf */,
 				A4A88E6C1BDB4AF500601272 /* ViewControllers */,
 				A4D4552A1BD94FA5007B6DD1 /* AppDelegate.swift */,
 				A4D4552C1BD94FA5007B6DD1 /* ViewController.swift */,
