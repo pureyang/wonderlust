@@ -12,3 +12,16 @@ Use-Cases:
 
 Created as part of [codepath for iOS PMs and UX Fall 2015](https://courses.codepath.com/courses/ios_for_designers/pages/bootcamp_structure)
 
+TODO list
+
++Venue picker - Y
+
++Venue Details - C
+
++Review Venues
+
++Review Cities
+
++City picker
+
++Actually Save Cities and Venues
