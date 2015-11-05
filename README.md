@@ -1,6 +1,8 @@
 # wonderlust
 
-This is wonderlust a travel exploration program. Lets users 
+This is wonderlust a travel exploration program. Think tinder meets pinterest.
+
+Lets users explore travel plans through a curated cities featuring high-quality pictures to create a fun visual browsing experience. 
 
 
 Use-Cases:
