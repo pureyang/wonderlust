@@ -18,6 +18,7 @@
 		A4D455351BD94FA5007B6DD1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4D455331BD94FA5007B6DD1 /* LaunchScreen.storyboard */; };
 		A4D455401BD94FA5007B6DD1 /* wonderlustTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D4553F1BD94FA5007B6DD1 /* wonderlustTests.swift */; };
 		A4D4554B1BD94FA5007B6DD1 /* wonderlustUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D4554A1BD94FA5007B6DD1 /* wonderlustUITests.swift */; };
+		FB3D00CA1BEB3CD0008A5C2D /* StageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3D00C91BEB3CD0008A5C2D /* StageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		A4D455461BD94FA5007B6DD1 /* wonderlustUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = wonderlustUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4D4554A1BD94FA5007B6DD1 /* wonderlustUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wonderlustUITests.swift; sourceTree = "<group>"; };
 		A4D4554C1BD94FA5007B6DD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB3D00C91BEB3CD0008A5C2D /* StageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 				A4A88E701BDB4E7B00601272 /* CitySummaryViewController.swift */,
 				A4A88E721BDB4E8900601272 /* VenuePickerViewController.swift */,
 				A410400B1BE292A500A49031 /* VenueDetailViewController.swift */,
+				FB3D00C91BEB3CD0008A5C2D /* StageViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -280,6 +283,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A4A88E711BDB4E7B00601272 /* CitySummaryViewController.swift in Sources */,
+				FB3D00CA1BEB3CD0008A5C2D /* StageViewController.swift in Sources */,
 				A4D4552D1BD94FA5007B6DD1 /* ViewController.swift in Sources */,
 				A4D4552B1BD94FA5007B6DD1 /* AppDelegate.swift in Sources */,
 				A410400C1BE292A500A49031 /* VenueDetailViewController.swift in Sources */,
