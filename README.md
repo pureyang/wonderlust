@@ -14,14 +14,19 @@ Created as part of [codepath for iOS PMs and UX Fall 2015](https://courses.codep
 
 TODO list
 
-+Venue picker - Y
++Venue Details - C DONE
 
-+Venue Details - C
++Venue picker - Y implement Koloda 
 
-+Review Venues
++Navigation - C implemnt a snapchat/tinder like top swipable nav
 
-+Review Cities
 
-+City picker
++Review Venues Map - C
+
++Review Venues List
+
++Review Cities / Feeds
+
++City picker - Y - add actual text field for filtering
 
 +Actually Save Cities and Venues
