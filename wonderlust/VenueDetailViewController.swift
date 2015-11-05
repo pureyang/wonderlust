@@ -27,16 +27,16 @@ class VenueDetailViewController: UIViewController,UIScrollViewDelegate {
         // Adding images
         var image:UIImage
         var imageView:UIImageView
-        var location:CGFloat = 0
+        var scrollWidth : CGFloat = 0
 
         for i in 1...5 {
             image = UIImage(named: "L\(i)")!
             imageView = UIImageView(image:image)
-            imageView.frame = CGRect(x: location, y: 0, width: image.size.width, height: image.size.height)
-            location += image.size.width
+            imageView.frame = CGRect(x: scrollWidth, y: 0, width: image.size.width, height: image.size.height)
+            scrollWidth += image.size.width
             pictureContainer.addSubview(imageView)
         }
-        pictureScroll.contentSize = CGSize(width: location, height: 375)
+        pictureScroll.contentSize = CGSize(width: scrollWidth, height: 375)
         imagePage.numberOfPages = 5
         imagePage.currentPage = 0
     }

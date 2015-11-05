@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2BF8F0AAD340F5473C6A9FCD /* Pods_wonderlust.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1BCD00BEDD1E2B4808CCBA8 /* Pods_wonderlust.framework */; };
 		A410400C1BE292A500A49031 /* VenueDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A410400B1BE292A500A49031 /* VenueDetailViewController.swift */; };
 		A4A88E6F1BDB4E6C00601272 /* CityPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A88E6E1BDB4E6C00601272 /* CityPickerViewController.swift */; };
 		A4A88E711BDB4E7B00601272 /* CitySummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A88E701BDB4E7B00601272 /* CitySummaryViewController.swift */; };
@@ -39,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8BCE9A4FA0E763542D798FEB /* Pods-wonderlust.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wonderlust.release.xcconfig"; path = "Pods/Target Support Files/Pods-wonderlust/Pods-wonderlust.release.xcconfig"; sourceTree = "<group>"; };
 		A410400B1BE292A500A49031 /* VenueDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VenueDetailViewController.swift; sourceTree = "<group>"; };
 		A485FEF01BE946BC00B5534B /* DIN-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DIN-Bold.otf"; sourceTree = "<group>"; };
 		A485FEF11BE9474700B5534B /* DINCond-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DINCond-Bold.otf"; sourceTree = "<group>"; };
@@ -58,6 +60,8 @@
 		A4D455461BD94FA5007B6DD1 /* wonderlustUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = wonderlustUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4D4554A1BD94FA5007B6DD1 /* wonderlustUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wonderlustUITests.swift; sourceTree = "<group>"; };
 		A4D4554C1BD94FA5007B6DD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B313F79AE548FB65A8100367 /* Pods-wonderlust.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wonderlust.debug.xcconfig"; path = "Pods/Target Support Files/Pods-wonderlust/Pods-wonderlust.debug.xcconfig"; sourceTree = "<group>"; };
+		E1BCD00BEDD1E2B4808CCBA8 /* Pods_wonderlust.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_wonderlust.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB3D00C91BEB3CD0008A5C2D /* StageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -66,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2BF8F0AAD340F5473C6A9FCD /* Pods_wonderlust.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +91,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		24E7668D8048EAB8C7AD54DB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B313F79AE548FB65A8100367 /* Pods-wonderlust.debug.xcconfig */,
+				8BCE9A4FA0E763542D798FEB /* Pods-wonderlust.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		A4A88E6C1BDB4AF500601272 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -105,6 +119,8 @@
 				A4D4553E1BD94FA5007B6DD1 /* wonderlustTests */,
 				A4D455491BD94FA5007B6DD1 /* wonderlustUITests */,
 				A4D455281BD94FA5007B6DD1 /* Products */,
+				24E7668D8048EAB8C7AD54DB /* Pods */,
+				E86F66AF2A0C2F0EC21D84C7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -152,6 +168,14 @@
 			path = wonderlustUITests;
 			sourceTree = "<group>";
 		};
+		E86F66AF2A0C2F0EC21D84C7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E1BCD00BEDD1E2B4808CCBA8 /* Pods_wonderlust.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -159,9 +183,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A4D4554F1BD94FA5007B6DD1 /* Build configuration list for PBXNativeTarget "wonderlust" */;
 			buildPhases = (
+				BEDBA5C2B17431B980F67ECE /* Check Pods Manifest.lock */,
 				A4D455231BD94FA5007B6DD1 /* Sources */,
 				A4D455241BD94FA5007B6DD1 /* Frameworks */,
 				A4D455251BD94FA5007B6DD1 /* Resources */,
+				E0D57223F1EDA9E2444B17B0 /* Embed Pods Frameworks */,
+				DCC3741A6D1735EA45230154 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -276,6 +303,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BEDBA5C2B17431B980F67ECE /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DCC3741A6D1735EA45230154 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-wonderlust/Pods-wonderlust-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E0D57223F1EDA9E2444B17B0 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-wonderlust/Pods-wonderlust-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A4D455231BD94FA5007B6DD1 /* Sources */ = {
@@ -426,6 +501,7 @@
 		};
 		A4D455501BD94FA5007B6DD1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B313F79AE548FB65A8100367 /* Pods-wonderlust.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = wonderlust/Info.plist;
@@ -437,6 +513,7 @@
 		};
 		A4D455511BD94FA5007B6DD1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8BCE9A4FA0E763542D798FEB /* Pods-wonderlust.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = wonderlust/Info.plist;
