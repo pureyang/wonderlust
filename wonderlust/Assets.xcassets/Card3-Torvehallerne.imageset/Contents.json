@@ -2,11 +2,11 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "Card3-Torvehallerne.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
+      "filename" : "Card3-Torvehallerne.png",
       "scale" : "2x"
     },
     {

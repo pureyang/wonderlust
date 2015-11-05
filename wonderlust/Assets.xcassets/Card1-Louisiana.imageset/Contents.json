@@ -2,11 +2,11 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "Card1-Louisiana.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
+      "filename" : "Card1-Louisiana.png",
       "scale" : "2x"
     },
     {
