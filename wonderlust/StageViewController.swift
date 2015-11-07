@@ -64,7 +64,6 @@ class StageViewController: UIViewController,UIScrollViewDelegate {
     
     func scrollViewWillEndDragging(scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
         let scrollTarget:CGPoint = targetContentOffset.memory
-        
         if(scrollTarget.x<79.25){
             targetContentOffset.initialize(CGPoint(x: 0, y: 0))
         }else if(scrollTarget.x>79.25 && scrollTarget.x<237.75){                        targetContentOffset.initialize(CGPoint(x: 158.5, y: 0))
