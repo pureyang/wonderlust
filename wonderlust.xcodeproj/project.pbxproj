@@ -246,6 +246,7 @@
 				TargetAttributes = {
 					A4D455261BD94FA5007B6DD1 = {
 						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = DR9A8D889P;
 					};
 					A4D4553A1BD94FA5007B6DD1 = {
 						CreatedOnToolsVersion = 7.0.1;
@@ -504,10 +505,13 @@
 			baseConfigurationReference = B313F79AE548FB65A8100367 /* Pods-wonderlust.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = wonderlust/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yang.wonderlust;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -516,10 +520,13 @@
 			baseConfigurationReference = 8BCE9A4FA0E763542D798FEB /* Pods-wonderlust.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = wonderlust/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yang.wonderlust;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

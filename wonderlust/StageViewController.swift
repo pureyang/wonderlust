@@ -62,19 +62,31 @@ class StageViewController: UIViewController,UIScrollViewDelegate {
         mainScrollView.contentOffset.x = scrollView.contentOffset.x*2.37
     }
     
-    func scrollViewWillEndDragging(scrollView: UIScrollView,
-         velocity: CGPoint,
-        targetContentOffset: UnsafeMutablePointer<CGPoint>){
-            if(mainScrollView.contentOffset.x<79.25){
-                mainScrollView.setContentOffset(CGPoint(x: 0,y: 0), animated: true)
-            }else if(mainScrollView.contentOffset.x>79.25 && mainScrollView.contentOffset.x<237.75){
-                mainScrollView.setContentOffset(CGPoint(x: 158.5,y: 0), animated: true)
-
-            }else{
-                mainScrollView.setContentOffset(CGPoint(x: 317,y: 0), animated: true)
-
-            }
+    func scrollViewDidEndDragging(scrollView: UIScrollView, willDecelerate decelerate: Bool) {
+        print(navScrollView.contentOffset.x)
+        if(navScrollView.contentOffset.x<79.25){
+            navScrollView.setContentOffset(CGPoint(x: 0,y: 0), animated: true)
+        }else if(navScrollView.contentOffset.x>79.25 && navScrollView.contentOffset.x<237.75){
+            navScrollView.setContentOffset(CGPoint(x: 158.5,y: 0), animated: true)
             
+        }else{
+            navScrollView.setContentOffset(CGPoint(x: 317,y: 0), animated: true)
+            
+        }
     }
+    
+    func scrollViewWillEndDragging(scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
+        print(navScrollView.contentOffset.x)
+        if(navScrollView.contentOffset.x<79.25){
+            navScrollView.setContentOffset(CGPoint(x: 0,y: 0), animated: true)
+        }else if(navScrollView.contentOffset.x>79.25 && navScrollView.contentOffset.x<237.75){
+            navScrollView.setContentOffset(CGPoint(x: 158.5,y: 0), animated: true)
+            
+        }else{
+            navScrollView.setContentOffset(CGPoint(x: 317,y: 0), animated: true)
+            
+        }
+    }
+    
     
 }
