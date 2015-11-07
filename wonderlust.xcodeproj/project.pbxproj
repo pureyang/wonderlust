@@ -19,6 +19,7 @@
 		A4D455351BD94FA5007B6DD1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4D455331BD94FA5007B6DD1 /* LaunchScreen.storyboard */; };
 		A4D455401BD94FA5007B6DD1 /* wonderlustTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D4553F1BD94FA5007B6DD1 /* wonderlustTests.swift */; };
 		A4D4554B1BD94FA5007B6DD1 /* wonderlustUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D4554A1BD94FA5007B6DD1 /* wonderlustUITests.swift */; };
+		FB3BAC3C1BEEA4100020D839 /* NavView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3BAC3B1BEEA4100020D839 /* NavView.swift */; };
 		FB3D00CA1BEB3CD0008A5C2D /* StageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3D00C91BEB3CD0008A5C2D /* StageViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -62,6 +63,7 @@
 		A4D4554C1BD94FA5007B6DD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B313F79AE548FB65A8100367 /* Pods-wonderlust.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wonderlust.debug.xcconfig"; path = "Pods/Target Support Files/Pods-wonderlust/Pods-wonderlust.debug.xcconfig"; sourceTree = "<group>"; };
 		E1BCD00BEDD1E2B4808CCBA8 /* Pods_wonderlust.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_wonderlust.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB3BAC3B1BEEA4100020D839 /* NavView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavView.swift; sourceTree = "<group>"; };
 		FB3D00C91BEB3CD0008A5C2D /* StageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -137,6 +139,7 @@
 		A4D455291BD94FA5007B6DD1 /* wonderlust */ = {
 			isa = PBXGroup;
 			children = (
+				FB3BAC3A1BEEA3F50020D839 /* Views */,
 				A485FEF01BE946BC00B5534B /* DIN-Bold.otf */,
 				A485FEF11BE9474700B5534B /* DINCond-Bold.otf */,
 				A4A88E6C1BDB4AF500601272 /* ViewControllers */,
@@ -174,6 +177,14 @@
 				E1BCD00BEDD1E2B4808CCBA8 /* Pods_wonderlust.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FB3BAC3A1BEEA3F50020D839 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FB3BAC3B1BEEA4100020D839 /* NavView.swift */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -358,6 +369,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB3BAC3C1BEEA4100020D839 /* NavView.swift in Sources */,
 				A4A88E711BDB4E7B00601272 /* CitySummaryViewController.swift in Sources */,
 				FB3D00CA1BEB3CD0008A5C2D /* StageViewController.swift in Sources */,
 				A4D4552D1BD94FA5007B6DD1 /* ViewController.swift in Sources */,

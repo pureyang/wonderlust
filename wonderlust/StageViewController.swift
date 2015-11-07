@@ -17,44 +17,35 @@ class StageViewController: UIViewController,UIScrollViewDelegate {
     var navOriginLocation: CGPoint!
     
     
-    @IBAction func navMenuPan(panGestureRecognizer: UIPanGestureRecognizer) {
-        let translation = panGestureRecognizer.translationInView(view)
-        if panGestureRecognizer.state == UIGestureRecognizerState.Began {
-            navLocation = navScrollContainer.center
-        } else if panGestureRecognizer.state == UIGestureRecognizerState.Changed {
-            if(navScrollContainer.center.x>=navOriginLocation.x){
-                navScrollContainer.center = CGPoint(x: navLocation.x+translation.x, y:navLocation.y)
-            }else{
-                navScrollContainer.center = navOriginLocation
-            }
-            print(navScrollContainer.frame.minX)
-        } else if panGestureRecognizer.state == UIGestureRecognizerState.Ended {
-        }
-        
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         //
-        var image:UIImage
-        var imageView:UIImageView
+        var navButton:UIButton
         var scrollWidth:CGFloat = 20
         let menuItemWidth:CGFloat = 158
-        let menuItemList = [["logoicon2x","action1"],
+        let menuItemList = [
+            ["logoicon2x","action1"],
             ["cardicon2x","action1"],
             ["mapicon2x","action1"],
             ["listicon2x","action1"],]
         for menuItem in menuItemList{
-            image = UIImage(named: menuItem[0])!
-            imageView = UIImageView(image:image)
-            imageView.contentMode = .ScaleAspectFill
-            imageView.frame = CGRect(x: scrollWidth, y: 10, width: 20, height: image.size.height)
+            navButton = UIButton()
+            navButton.setImage(UIImage(named: menuItem[0])!, forState: .Normal)
+            navButton.frame = CGRect(x: scrollWidth, y: 10, width: 30, height:30)
+            navButton.tag = Int(scrollWidth - menuItemWidth - 20)
             scrollWidth += menuItemWidth
-            navScrollContainer.addSubview(imageView)
+            navButton.addTarget(self, action: "navButtonTap:", forControlEvents: .TouchUpInside)
+
+            navScrollContainer.addSubview(navButton)
         }
+        // Must set container size or button might be out of bound and not work!
+        navScrollContainer.frame.size.width = scrollWidth + 40
         navScrollView.contentSize.width = scrollWidth + 40
         
-        
+    }
+    
+    func navButtonTap(sender: UIButton!) {
+        navScrollView.setContentOffset(CGPoint(x: sender.tag, y: 0), animated: true)
     }
     
     func scrollViewDidScroll(scrollView: UIScrollView){
@@ -73,5 +64,6 @@ class StageViewController: UIViewController,UIScrollViewDelegate {
         
     }
     
+  
     
 }
