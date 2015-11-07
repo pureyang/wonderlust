@@ -58,34 +58,20 @@ class StageViewController: UIViewController,UIScrollViewDelegate {
     }
     
     func scrollViewDidScroll(scrollView: UIScrollView){
-        //print(scrollView.contentOffset)
         mainScrollView.contentOffset.x = scrollView.contentOffset.x*2.37
     }
     
-    func scrollViewDidEndDragging(scrollView: UIScrollView, willDecelerate decelerate: Bool) {
-        print(navScrollView.contentOffset.x)
-        if(navScrollView.contentOffset.x<79.25){
-            navScrollView.setContentOffset(CGPoint(x: 0,y: 0), animated: true)
-        }else if(navScrollView.contentOffset.x>79.25 && navScrollView.contentOffset.x<237.75){
-            navScrollView.setContentOffset(CGPoint(x: 158.5,y: 0), animated: true)
-            
-        }else{
-            navScrollView.setContentOffset(CGPoint(x: 317,y: 0), animated: true)
-            
-        }
-    }
     
     func scrollViewWillEndDragging(scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
-        print(navScrollView.contentOffset.x)
-        if(navScrollView.contentOffset.x<79.25){
-            navScrollView.setContentOffset(CGPoint(x: 0,y: 0), animated: true)
-        }else if(navScrollView.contentOffset.x>79.25 && navScrollView.contentOffset.x<237.75){
-            navScrollView.setContentOffset(CGPoint(x: 158.5,y: 0), animated: true)
-            
+        let scrollTarget:CGPoint = targetContentOffset.memory
+        print(scrollTarget)
+        if(scrollTarget.x<79.25){
+            targetContentOffset.initialize(CGPoint(x: 0, y: 0))
+        }else if(scrollTarget.x>79.25 && scrollTarget.x<237.75){                        targetContentOffset.initialize(CGPoint(x: 158.5, y: 0))
         }else{
-            navScrollView.setContentOffset(CGPoint(x: 317,y: 0), animated: true)
-            
+            targetContentOffset.initialize(CGPoint(x: 317, y: 0))
         }
+        
     }
     
     
