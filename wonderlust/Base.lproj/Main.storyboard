@@ -387,30 +387,35 @@
             </objects>
             <point key="canvasLocation" x="3062.5" y="2873"/>
         </scene>
-        <!--View Controller-->
+        <!--Map View Controller-->
         <scene sceneID="n2S-B2-0Sm">
             <objects>
-                <viewController id="JPF-xC-H3i" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="5AL-pS-i9W">
+                <viewController id="JPF-xC-H3i" customClass="MapViewController" customModule="wonderlust" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" clipsSubviews="YES" contentMode="scaleToFill" id="5AL-pS-i9W">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="628"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="qcH-VR-FK3">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="TopLeft" maximumZoomScale="2" id="qcH-VR-FK3">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="628"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="Map" id="ehP-vS-xHW">
-                                        <rect key="frame" x="0.0" y="0.0" width="352" height="1100"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <animations/>
-                                    </imageView>
-                                </subviews>
                                 <animations/>
+                                <connections>
+                                    <outlet property="delegate" destination="JPF-xC-H3i" id="Teq-I1-2Um"/>
+                                </connections>
                             </scrollView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Card3-Torvehallerne" id="Cgi-uM-PEs">
+                                <rect key="frame" x="-400" y="190" width="330" height="480"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                            </imageView>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="mapScroll" destination="qcH-VR-FK3" id="Ddx-ve-XJu"/>
+                        <outlet property="uiCard" destination="Cgi-uM-PEs" id="l6u-h7-lOG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iOR-u5-C10" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -420,11 +425,11 @@
     <resources>
         <image name="BackArrowbutton2x" width="31" height="21"/>
         <image name="Card1-Louisiana" width="495" height="724"/>
+        <image name="Card3-Torvehallerne" width="495" height="724"/>
         <image name="CitySummary" width="375" height="667"/>
         <image name="FirstTimeHomepage" width="375" height="667"/>
         <image name="Listview2x" width="375" height="944"/>
         <image name="Louisianadetailtext2x" width="375" height="695"/>
-        <image name="Map" width="352" height="1100"/>
         <image name="Search1" width="375" height="448"/>
         <image name="Search2" width="375" height="448"/>
         <image name="Search3" width="375" height="448"/>
