@@ -21,6 +21,7 @@
 		A4D4554B1BD94FA5007B6DD1 /* wonderlustUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D4554A1BD94FA5007B6DD1 /* wonderlustUITests.swift */; };
 		FB3BAC3C1BEEA4100020D839 /* NavView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3BAC3B1BEEA4100020D839 /* NavView.swift */; };
 		FB3BAC3E1BEEC4AA0020D839 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3BAC3D1BEEC4AA0020D839 /* MapViewController.swift */; };
+		FB3BAC401BEED7B20020D839 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3BAC3F1BEED7B20020D839 /* SearchViewController.swift */; };
 		FB3D00CA1BEB3CD0008A5C2D /* StageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3D00C91BEB3CD0008A5C2D /* StageViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -66,6 +67,7 @@
 		E1BCD00BEDD1E2B4808CCBA8 /* Pods_wonderlust.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_wonderlust.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB3BAC3B1BEEA4100020D839 /* NavView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavView.swift; sourceTree = "<group>"; };
 		FB3BAC3D1BEEC4AA0020D839 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		FB3BAC3F1BEED7B20020D839 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		FB3D00C91BEB3CD0008A5C2D /* StageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -113,6 +115,7 @@
 				A410400B1BE292A500A49031 /* VenueDetailViewController.swift */,
 				FB3D00C91BEB3CD0008A5C2D /* StageViewController.swift */,
 				FB3BAC3D1BEEC4AA0020D839 /* MapViewController.swift */,
+				FB3BAC3F1BEED7B20020D839 /* SearchViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -372,6 +375,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB3BAC401BEED7B20020D839 /* SearchViewController.swift in Sources */,
 				FB3BAC3C1BEEA4100020D839 /* NavView.swift in Sources */,
 				A4A88E711BDB4E7B00601272 /* CitySummaryViewController.swift in Sources */,
 				FB3D00CA1BEB3CD0008A5C2D /* StageViewController.swift in Sources */,
