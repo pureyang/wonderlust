@@ -23,7 +23,7 @@ class VenuePickerViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        pickerViewOriginalCenter = pickerView.center
+        // pickerViewOriginalCenter = pickerView.center
     }
 
     override func didReceiveMemoryWarning() {
