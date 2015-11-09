@@ -18,10 +18,9 @@ TODO list
 
 +Venue Details - C DONE
 
-+Venue picker - Y implement Koloda 
++Venue picker - Y DONE
 
 +Navigation - C implemnt a snapchat/tinder like top swipable nav
-
 
 +Review Venues Map - C
 
