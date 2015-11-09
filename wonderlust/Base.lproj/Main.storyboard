@@ -273,6 +273,13 @@
                                 <rect key="frame" x="57" y="524" width="74" height="74"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Gac-9Z-FcC">
+                                <rect key="frame" x="178" y="578" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="Eth-rp-9fu" kind="modal" identifier="detailSegue" id="kD0-xO-jjv"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -330,18 +337,12 @@
                                     <outlet property="delegate" destination="JPF-xC-H3i" id="Teq-I1-2Um"/>
                                 </connections>
                             </scrollView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Card3-Torvehallerne" id="Cgi-uM-PEs">
-                                <rect key="frame" x="-400" y="190" width="330" height="480"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <animations/>
-                            </imageView>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
                         <outlet property="mapScroll" destination="qcH-VR-FK3" id="Ddx-ve-XJu"/>
-                        <outlet property="uiCard" destination="Cgi-uM-PEs" id="l6u-h7-lOG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iOR-u5-C10" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -351,7 +352,6 @@
     </scenes>
     <resources>
         <image name="BackArrowbutton2x" width="31" height="21"/>
-        <image name="Card3-Torvehallerne" width="495" height="724"/>
         <image name="Cardclose" width="74" height="74"/>
         <image name="Cardpin" width="74" height="74"/>
         <image name="CitySummary" width="375" height="667"/>

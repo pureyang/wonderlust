@@ -33,7 +33,12 @@ class VenuePickerViewController: UIViewController, KolodaViewDataSource, KolodaV
     }
     
     func kolodaViewForCardAtIndex(koloda: KolodaView, index: UInt) -> UIView {
-        return UIImageView(image: UIImage(named: "Card\(index + 1)"))
+        let cardImageView = UIImageView(image: UIImage(named: "Card\(index + 1)"))
+        let tapRecognizer = UITapGestureRecognizer(target: self, action:Selector("handleTap:"))
+
+        cardImageView.userInteractionEnabled = true
+        cardImageView.addGestureRecognizer(tapRecognizer)
+        return cardImageView
     }
     
     func kolodaViewForCardOverlayAtIndex(koloda: KolodaView, index: UInt) -> OverlayView? {
@@ -41,14 +46,23 @@ class VenuePickerViewController: UIViewController, KolodaViewDataSource, KolodaV
             owner: self, options: nil)[0] as? OverlayView
     }
     
-    //MARK: KolodaViewDelegate
+    func kolodaDidRunOutOfCards(koloda: KolodaView) {
+        //Example: reloading
+        kolodaView.resetCurrentCardNumber()
+    }
     
+    //MARK: KolodaViewDelegate
     func kolodaDidSwipedCardAtIndex(koloda: KolodaView, index: UInt, direction: SwipeResultDirection) {
         //Example: loading more cards
         if index >= 3 {
             numberOfCards = 6
             kolodaView.reloadData()
         }
+    }
+    
+    func handleTap(recognizer: UITapGestureRecognizer) {
+        print("handleTap")
+        self.performSegueWithIdentifier("detailSegue", sender: recognizer)
     }
 
     override func didReceiveMemoryWarning() {
