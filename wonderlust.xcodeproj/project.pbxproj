@@ -12,6 +12,7 @@
 		A4A88E6F1BDB4E6C00601272 /* CityPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A88E6E1BDB4E6C00601272 /* CityPickerViewController.swift */; };
 		A4A88E711BDB4E7B00601272 /* CitySummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A88E701BDB4E7B00601272 /* CitySummaryViewController.swift */; };
 		A4A88E731BDB4E8900601272 /* VenuePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A88E721BDB4E8900601272 /* VenuePickerViewController.swift */; };
+		A4C3FD1B1BF06BDA000C16FC /* OverlayView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4C3FD1A1BF06BDA000C16FC /* OverlayView.xib */; };
 		A4D4552B1BD94FA5007B6DD1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D4552A1BD94FA5007B6DD1 /* AppDelegate.swift */; };
 		A4D4552D1BD94FA5007B6DD1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D4552C1BD94FA5007B6DD1 /* ViewController.swift */; };
 		A4D455301BD94FA5007B6DD1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4D4552E1BD94FA5007B6DD1 /* Main.storyboard */; };
@@ -50,6 +51,7 @@
 		A4A88E6E1BDB4E6C00601272 /* CityPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityPickerViewController.swift; sourceTree = "<group>"; };
 		A4A88E701BDB4E7B00601272 /* CitySummaryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CitySummaryViewController.swift; sourceTree = "<group>"; };
 		A4A88E721BDB4E8900601272 /* VenuePickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VenuePickerViewController.swift; sourceTree = "<group>"; };
+		A4C3FD1A1BF06BDA000C16FC /* OverlayView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OverlayView.xib; sourceTree = "<group>"; };
 		A4D455271BD94FA5007B6DD1 /* wonderlust.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wonderlust.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4D4552A1BD94FA5007B6DD1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A4D4552C1BD94FA5007B6DD1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -152,6 +154,7 @@
 				A4D4552A1BD94FA5007B6DD1 /* AppDelegate.swift */,
 				A4D4552C1BD94FA5007B6DD1 /* ViewController.swift */,
 				A4D4552E1BD94FA5007B6DD1 /* Main.storyboard */,
+				A4C3FD1A1BF06BDA000C16FC /* OverlayView.xib */,
 				A4D455311BD94FA5007B6DD1 /* Assets.xcassets */,
 				A4D455331BD94FA5007B6DD1 /* LaunchScreen.storyboard */,
 				A4D455361BD94FA5007B6DD1 /* Info.plist */,
@@ -301,6 +304,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A4D455351BD94FA5007B6DD1 /* LaunchScreen.storyboard in Resources */,
+				A4C3FD1B1BF06BDA000C16FC /* OverlayView.xib in Resources */,
 				A4D455321BD94FA5007B6DD1 /* Assets.xcassets in Resources */,
 				A4D455301BD94FA5007B6DD1 /* Main.storyboard in Resources */,
 			);
