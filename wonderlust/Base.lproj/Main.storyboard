@@ -316,8 +316,8 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="628"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="Listview2x" id="Gle-RB-WWO">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="944"/>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" image="Listview2x" id="Gle-RB-WWO">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="628"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <animations/>
                                     </imageView>
