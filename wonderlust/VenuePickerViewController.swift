@@ -69,4 +69,12 @@ class VenuePickerViewController: UIViewController, KolodaViewDataSource, KolodaV
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    @IBAction func didTouchPin(sender: UIButton) {
+        kolodaView.swipe(SwipeResultDirection.Right)
+    }
+    
+    @IBAction func didTouchCancel(sender: UIButton) {
+        kolodaView.swipe(SwipeResultDirection.Left)
+    }
 }

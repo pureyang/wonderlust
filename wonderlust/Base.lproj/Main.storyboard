@@ -292,6 +292,20 @@
                                     <segue destination="Eth-rp-9fu" kind="modal" identifier="detailSegue" id="kD0-xO-jjv"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="NhR-n5-c7c">
+                                <rect key="frame" x="243" y="524" width="74" height="68"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="didTouchPin:" destination="2gf-Bi-PG9" eventType="touchUpInside" id="mo0-7I-ita"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="AlC-Ie-yU6">
+                                <rect key="frame" x="57" y="524" width="74" height="68"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="didTouchCancel:" destination="2gf-Bi-PG9" eventType="touchUpInside" id="e0k-f8-CEm"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
