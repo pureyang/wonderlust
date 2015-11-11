@@ -18,6 +18,7 @@ class CustomOverlayView: OverlayView {
         [unowned self] in
         
         var imageView = UIImageView(frame: self.bounds)
+        
         self.addSubview(imageView)
         
         return imageView
@@ -25,6 +26,7 @@ class CustomOverlayView: OverlayView {
     
     override var overlayState:OverlayMode  {
         didSet {
+            overlayImageView.contentMode = .ScaleAspectFit
             switch overlayState {
             case .Left :
                 overlayImageView.image = UIImage(named: overlayLeftImageName)

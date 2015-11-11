@@ -24,10 +24,10 @@ class MapViewController: UIViewController, UIScrollViewDelegate{
         let mapImage:UIImage = UIImage(named: "Map")!
         mapImageView = UIImageView(image: mapImage)
         mapImageView.contentMode = .TopLeft
+        
         mapScroll.addSubview(mapImageView)
         mapScroll.contentSize = mapImageView.bounds.size
-        mapScroll.contentSize.width = 1000
-        
+        mapScroll.zoomScale = 1.1
         //
         let pinButton = UIButton()
         pinButton.setImage(UIImage(named: "Locationpin2x")!, forState: .Normal)
@@ -46,7 +46,7 @@ class MapViewController: UIViewController, UIScrollViewDelegate{
         print("test")
         mapScroll.zoomToRect(CGRect(x: 50, y: 320, width: 260, height: 260), animated: true)
         UIView.animateWithDuration(0.25, animations: {
-            self.uiCard.transform.tx += 420
+            self.uiCard.transform.tx += 360
         })
     }
     
