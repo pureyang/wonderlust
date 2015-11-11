@@ -2,11 +2,11 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "Newsfeed.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
+      "filename" : "Newsfeed-1.png",
       "scale" : "2x"
     },
     {
