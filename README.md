@@ -14,24 +14,6 @@ Use-Cases:
 
 Created as part of [codepath for iOS PMs and UX Fall 2015](https://courses.codepath.com/courses/ios_for_designers/pages/bootcamp_structure)
 
-TODO list
-
-+Venue Details - C DONE
-
-+Venue picker - Y DONE
-
-+Navigation - C implemnt a snapchat/tinder like top swipable nav
-
-+Review Venues Map - C
-
-+Review Venues List
-
-+Review Cities / Feeds
-
-+City picker - Y - add actual text field for filtering
-
-+Actually Save Cities and Venues
-
 
 Demo Script
 Start typing C, o (TODO: get this to work)
