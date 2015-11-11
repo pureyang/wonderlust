@@ -31,3 +31,30 @@ TODO list
 +City picker - Y - add actual text field for filtering
 
 +Actually Save Cities and Venues
+
+
+Demo Script
+Start typing C, o (TODO: get this to work)
+
+select Copenhagen
+
+swipe right 1st card (TODO: add shadows to each card, partially done)
+swipe right 2nd card
+tap for detail on 3rd card 
+tap to come back (TODO: should come back to the card currently selected)
+swipe left 4th card (cancel)
+
+tap map icon
+
+tap list icon
+
+swipe top menu all the way right (TODO fix bug, currently stops at venue picker)
+
+profile should show copenhagen
+
+tap on feed icon
+
+FIN
+
+
+

@@ -10,7 +10,7 @@ import UIKit
 import Koloda
 import pop
 
-private var numberOfCards: UInt = 3
+private var numberOfCards: UInt = 5
 
 class VenuePickerViewController: UIViewController, KolodaViewDataSource, KolodaViewDelegate {
 
@@ -34,8 +34,17 @@ class VenuePickerViewController: UIViewController, KolodaViewDataSource, KolodaV
     
     func kolodaViewForCardAtIndex(koloda: KolodaView, index: UInt) -> UIView {
         let cardImageView = UIImageView(image: UIImage(named: "Card\(index + 1)"))
+        
         let tapRecognizer = UITapGestureRecognizer(target: self, action:Selector("handleTap:"))
 
+        // lets add a shadow to each card
+        let shadowPath = UIBezierPath(rect: CGRect(x: 0, y: 0, width: 280, height: 400))
+        cardImageView.layer.masksToBounds = false
+        cardImageView.layer.shadowColor = UIColor.blackColor().CGColor
+        cardImageView.layer.shadowOffset = CGSizeMake(0.0, 0.5)
+        cardImageView.layer.shadowOpacity = 0.5
+        cardImageView.layer.shadowPath = shadowPath.CGPath
+        
         cardImageView.userInteractionEnabled = true
         cardImageView.addGestureRecognizer(tapRecognizer)
         return cardImageView
@@ -54,8 +63,7 @@ class VenuePickerViewController: UIViewController, KolodaViewDataSource, KolodaV
     //MARK: KolodaViewDelegate
     func kolodaDidSwipedCardAtIndex(koloda: KolodaView, index: UInt, direction: SwipeResultDirection) {
         //Example: loading more cards
-        if index >= 3 {
-            numberOfCards = 6
+        if index >= numberOfCards {
             kolodaView.reloadData()
         }
     }
