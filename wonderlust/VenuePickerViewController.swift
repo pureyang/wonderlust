@@ -38,12 +38,14 @@ class VenuePickerViewController: UIViewController, KolodaViewDataSource, KolodaV
         let tapRecognizer = UITapGestureRecognizer(target: self, action:Selector("handleTap:"))
 
         // lets add a shadow to each card
-        let shadowPath = UIBezierPath(rect: CGRect(x: 0, y: 0, width: 280, height: 400))
+        /*
+        let shadowPath = UIBezierPath(rect: CGRect(x: 0, y: 0, width: 300, height: 440))
         cardImageView.layer.masksToBounds = false
         cardImageView.layer.shadowColor = UIColor.blackColor().CGColor
-        cardImageView.layer.shadowOffset = CGSizeMake(0.0, 0.5)
+        cardImageView.layer.shadowOffset = CGSizeMake(0, 0)
         cardImageView.layer.shadowOpacity = 0.5
         cardImageView.layer.shadowPath = shadowPath.CGPath
+        */
         
         cardImageView.userInteractionEnabled = true
         cardImageView.addGestureRecognizer(tapRecognizer)

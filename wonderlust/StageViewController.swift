@@ -40,7 +40,7 @@ class StageViewController: UIViewController,UIScrollViewDelegate {
             navButton.imageView?.contentMode = .ScaleAspectFit
             navButton.setImage(UIImage(named: menuItem[0])!, forState: .Normal)
             navButton.frame = CGRect(x: scrollWidth, y: 10, width: 30, height:30)
-            navButton.tag = Int(scrollWidth - menuItemWidth - 20)
+            navButton.tag = Int(scrollWidth - menuItemWidth - 19.5)
             navButton.addTarget(self, action: "navButtonTap:", forControlEvents: .TouchUpInside)
 
             navScrollContainer.addSubview(navButton)
@@ -81,7 +81,7 @@ class StageViewController: UIViewController,UIScrollViewDelegate {
         
         let scrollTarget:CGPoint = targetContentOffset.memory
         
-        targetContentOffset.initialize(CGPoint(x: round(scrollTarget.x/158.5)*158.5, y:0))
+        targetContentOffset.initialize(CGPoint(x: round(scrollTarget.x/158.5)*158.5-0.5, y:0))
     }
     
   }
