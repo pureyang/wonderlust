@@ -16,21 +16,21 @@ Created as part of [codepath for iOS PMs and UX Fall 2015](https://courses.codep
 
 
 Demo Script
-Start typing C, o (TODO: get this to work)
+Start typing C, o
 
 select Copenhagen
 
-swipe right 1st card (TODO: add shadows to each card, partially done)
+swipe right 1st card
 swipe right 2nd card
 tap for detail on 3rd card 
-tap to come back (TODO: should come back to the card currently selected)
+tap to come back (TODO: this works, except slides right/left, not up/down)
 swipe left 4th card (cancel)
 
 tap map icon
 
 tap list icon
 
-swipe top menu all the way right (TODO fix bug, currently stops at venue picker)
+swipe top menu all the way right
 
 profile should show copenhagen
 

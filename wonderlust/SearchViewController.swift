@@ -11,10 +11,25 @@ import UIKit
 class SearchViewController: UIViewController {
     
     @IBOutlet weak var searchImage: UIImageView!
+    @IBOutlet weak var searchTextField: UITextField!
     
     var searchState:Int!
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        searchState = 0
+        searchTextField.text = ""
+    }
+    
     @IBAction func searchButtonTap(sender: AnyObject) {
+        updateSearch()
+    }
+    
+    @IBAction func searchInputChanged(sender: UITextField) {
+        updateSearch()
+    }
+    
+    func updateSearch() {
         switch(searchState){
         case 0:
             searchState = 1
@@ -28,14 +43,9 @@ class SearchViewController: UIViewController {
         default:
             searchState = 0
         }
-        
     }
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        searchState = 0
-        // Do any additional setup after loading the view.
-    }
+
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -43,6 +53,7 @@ class SearchViewController: UIViewController {
         
     }
     
+
 
     /*
     // MARK: - Navigation

@@ -52,11 +52,10 @@ class VenueDetailViewController: UIViewController,UIScrollViewDelegate {
         self.imagePage.currentPage  = Int(round(page))
 
     }
-    @IBAction func backClick(sender: UIButton) {
-        performSegueWithIdentifier("toPickerView", sender: self)
-    }
     
-
+    @IBAction func didTouchBack(sender: UIButton) {
+        self.navigationController?.popViewControllerAnimated(true)
+    }
     /*
     // MARK: - Navigation
 

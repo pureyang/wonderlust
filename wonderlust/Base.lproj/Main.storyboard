@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="X79-Su-i5X">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="NeN-tc-Ujr">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="DINCond-Bold.otf">
+            <string>DINCond-Bold</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
         <!--City Summary View Controller-->
         <scene sceneID="JBG-L6-8hT">
@@ -85,13 +90,14 @@
                                 <animations/>
                                 <state key="normal" image="BackArrowbutton2x"/>
                                 <connections>
-                                    <action selector="backClick:" destination="Eth-rp-9fu" eventType="touchUpInside" id="3BZ-ck-ReF"/>
+                                    <action selector="didTouchBack:" destination="Eth-rp-9fu" eventType="touchUpInside" id="Pus-em-hFx"/>
                                 </connections>
                             </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Ccr-T5-W37"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="detailText" destination="y6y-tX-1f4" id="ZOc-GM-W3V"/>
@@ -99,7 +105,6 @@
                         <outlet property="pictureContainer" destination="N6j-OT-wfb" id="9pc-m4-r3q"/>
                         <outlet property="pictureScroll" destination="uQW-rC-0FW" id="hdt-yG-oEX"/>
                         <outlet property="textScrollView" destination="IMF-9B-JqU" id="lWn-jG-VVT"/>
-                        <segue destination="X79-Su-i5X" kind="modal" identifier="toPickerView" id="9Ch-iB-r9t"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NNY-hx-ZL5" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -127,6 +132,16 @@
                                     <segue destination="jKR-sB-eTY" kind="modal" id="7cb-8I-V6t"/>
                                 </connections>
                             </button>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="Searchbutton" id="mLo-pT-hAx">
+                                <rect key="frame" x="0.0" y="484" width="375" height="33"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" id="B6C-Ix-gVI">
+                                <rect key="frame" x="51" y="484" width="277" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -135,7 +150,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aBo-f0-9Qx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-190.5" y="1200.5"/>
+            <point key="canvasLocation" x="-184.5" y="1206.5"/>
         </scene>
         <!--Search View Controller-->
         <scene sceneID="dbZ-Cb-QzN">
@@ -156,13 +171,22 @@
                                 <animations/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="NrB-9m-PQO">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="58" width="375" height="609"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <animations/>
                                 <connections>
                                     <action selector="searchButtonTap:" destination="jKR-sB-eTY" eventType="touchUpInside" id="aYt-0l-ozj"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Co" textAlignment="natural" minimumFontSize="17" id="rFq-Qk-3go">
+                                <rect key="frame" x="51" y="20" width="304" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="DINCond-Bold" family="DINCond-Bold" pointSize="28"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="searchInputChanged:" destination="jKR-sB-eTY" eventType="editingChanged" id="Omp-BT-mYm"/>
+                                </connections>
+                            </textField>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -170,6 +194,7 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="searchImage" destination="yX1-w6-zQT" id="Noz-AB-N9L"/>
+                        <outlet property="searchTextField" destination="rFq-Qk-3go" id="hXB-yy-5pb"/>
                         <segue destination="kT3-Bt-Sgf" kind="modal" identifier="citySummary" id="Rrq-BG-YX9"/>
                     </connections>
                 </viewController>
@@ -218,7 +243,7 @@
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                         <animations/>
                                         <connections>
-                                            <segue destination="2gf-Bi-PG9" kind="embed" id="UMj-LV-bzb"/>
+                                            <segue destination="NeN-tc-Ujr" kind="embed" id="UMj-LV-bzb"/>
                                         </connections>
                                     </containerView>
                                     <containerView opaque="NO" contentMode="scaleToFill" id="XWx-Vd-9Mm">
@@ -297,7 +322,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <animations/>
                                 <connections>
-                                    <segue destination="Eth-rp-9fu" kind="modal" identifier="detailSegue" id="kD0-xO-jjv"/>
+                                    <segue destination="Eth-rp-9fu" kind="push" identifier="detailSegue" id="kD0-xO-jjv"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="NhR-n5-c7c">
@@ -320,13 +345,14 @@
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Or8-K9-JpW"/>
                     <connections>
                         <outlet property="kolodaView" destination="wG2-vK-xDF" id="uaI-9U-dDM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5NZ-dm-NCu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1776.5" y="2873"/>
+            <point key="canvasLocation" x="2363.5" y="2873"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="IIL-Lp-cSX">
@@ -355,7 +381,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XVh-zD-CUE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3062.5" y="2873"/>
+            <point key="canvasLocation" x="3649.5" y="2873"/>
         </scene>
         <!--Map View Controller-->
         <scene sceneID="n2S-B2-0Sm">
@@ -389,7 +415,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iOR-u5-C10" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2404.5" y="2873"/>
+            <point key="canvasLocation" x="2991.5" y="2873"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="dhH-Z6-8GN">
@@ -435,6 +461,24 @@
             </objects>
             <point key="canvasLocation" x="785.5" y="2860.5"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ayu-Yy-ZcW">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="NeN-tc-Ujr" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="dpX-Ym-BJM">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="2gf-Bi-PG9" kind="relationship" relationship="rootViewController" id="Csb-KB-7L6"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fD9-G4-IZt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1776.5" y="2873"/>
+        </scene>
     </scenes>
     <resources>
         <image name="BackArrowbutton2x" width="31" height="21"/>
@@ -450,7 +494,4 @@
         <image name="Searchbutton" width="375" height="33"/>
         <image name="YourHomepage" width="375" height="603"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="9Ch-iB-r9t"/>
-    </inferredMetricsTieBreakers>
 </document>
