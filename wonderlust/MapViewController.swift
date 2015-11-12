@@ -32,7 +32,7 @@ class MapViewController: UIViewController, UIScrollViewDelegate{
         //
         let pinButton = UIButton()
         pinButton.setImage(UIImage(named: "Locationpin2x")!, forState: .Normal)
-        pinButton.frame = CGRect(x: 150, y: 300, width: 60, height:60)
+        pinButton.frame = CGRect(x: 136, y: 358, width: 60, height:60)
         pinButton.addTarget(self, action: "pinButtonTap:", forControlEvents: .TouchUpInside)
         mapImageView.addSubview(pinButton)
         mapImageView.userInteractionEnabled = true
@@ -45,7 +45,7 @@ class MapViewController: UIViewController, UIScrollViewDelegate{
     
     func pinButtonTap(sender:UIButton){
         if(cardState == 0){
-            mapScroll.zoomToRect(CGRect(x: 50, y: 320, width: 260, height: 260), animated: true)
+            mapScroll.zoomToRect(CGRect(x: 30, y: 430, width: 260, height: 260), animated: true)
             UIView.animateWithDuration(0.25, animations: {
                 self.uiCard.transform.tx += 360
             })
