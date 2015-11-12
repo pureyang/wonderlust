@@ -14,6 +14,7 @@ class MapViewController: UIViewController, UIScrollViewDelegate{
     @IBOutlet weak var uiCard: UIImageView!
     
     var mapImageView:UIImageView!
+    var cardState:Int = 0
     
     
     
@@ -43,11 +44,22 @@ class MapViewController: UIViewController, UIScrollViewDelegate{
     }
     
     func pinButtonTap(sender:UIButton){
-        print("test")
-        mapScroll.zoomToRect(CGRect(x: 50, y: 320, width: 260, height: 260), animated: true)
-        UIView.animateWithDuration(0.25, animations: {
-            self.uiCard.transform.tx += 360
-        })
+        if(cardState == 0){
+            mapScroll.zoomToRect(CGRect(x: 50, y: 320, width: 260, height: 260), animated: true)
+            UIView.animateWithDuration(0.25, animations: {
+                self.uiCard.transform.tx += 360
+            })
+            cardState = 1
+        }else{
+            UIView.animateWithDuration(0.5, animations: {                            self.mapScroll.zoomScale = 1.1
+                self.uiCard.transform.tx += 360
+                }, completion: {
+                    (value: Bool) in
+                    self.uiCard.transform.tx -= 720
+                }
+            )
+            cardState = 0
+        }
     }
     
     func viewForZoomingInScrollView(scrollView: UIScrollView) -> UIView? {
