@@ -54,16 +54,10 @@ class VenueDetailViewController: UIViewController,UIScrollViewDelegate {
     }
     
     @IBAction func didTouchBack(sender: UIButton) {
-        self.navigationController?.popViewControllerAnimated(true)
+        dismissViewControllerAnimated(true) { () -> Void in
+            //
+        }
+//        self.navigationController?.popViewControllerAnimated(true)
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
