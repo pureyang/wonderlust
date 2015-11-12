@@ -17,19 +17,20 @@ class StageViewController: UIViewController,UIScrollViewDelegate {
     var navOriginLocation: CGPoint!
     var navGrayViews: [UIImageView] = []
     
+    var navButton:UIButton!
+    var navGray:UIImageView!
+    var scrollWidth:CGFloat = 178
+    let menuItemWidth:CGFloat = 158
+    let menuItemList = [
+        ["newsfeedicon2x","newsfeedicongray2x"],
+        ["logoicon2x","logoicongray2x"],
+        ["cardicon2x","cardicongray2x"],
+        ["mapicon2x","mapicongray2x"],
+        ["listicon2x","listicongray2x"],]
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //
-        var navButton:UIButton
-        var navGray:UIImageView
-        var scrollWidth:CGFloat = 20
-        let menuItemWidth:CGFloat = 158
-        let menuItemList = [
-            ["logoicon2x","logoicongray2x"],
-            ["cardicon2x","cardicongray2x"],
-            ["mapicon2x","mapicongray2x"],
-            ["listicon2x","listicongray2x"],]
+        
         //
         for menuItem in menuItemList{
             navButton = UIButton()
@@ -53,10 +54,12 @@ class StageViewController: UIViewController,UIScrollViewDelegate {
             //
             scrollWidth += menuItemWidth
         }
-        navGrayViews[1].alpha = 0.0
         // Must set container size or button might be out of bound and not work!
         navScrollContainer.frame.size.width = scrollWidth + 40
         navScrollView.contentSize.width = scrollWidth + 40
+        //
+        // Move to item 1 instead of item 0
+        navScrollView.contentOffset.x = menuItemWidth + 158
         
     }
     
@@ -65,8 +68,8 @@ class StageViewController: UIViewController,UIScrollViewDelegate {
     }
     
     func scrollViewDidScroll(scrollView: UIScrollView){
-        mainScrollView.contentOffset.x = scrollView.contentOffset.x*2.37
-        var index:CGFloat = -1
+        mainScrollView.contentOffset.x = scrollView.contentOffset.x*2.37 - 375*2
+        var index:CGFloat = -2
         for navGray in navGrayViews{
             navGray.alpha = abs(mainScrollView.contentOffset.x/375.0 - index)
             index++
@@ -75,15 +78,10 @@ class StageViewController: UIViewController,UIScrollViewDelegate {
     
     
     func scrollViewWillEndDragging(scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
-        let scrollTarget:CGPoint = targetContentOffset.memory
-        if(scrollTarget.x<79.25){
-            targetContentOffset.initialize(CGPoint(x: 0, y: 0))
-        }else if(scrollTarget.x>79.25 && scrollTarget.x<237.75){
-            targetContentOffset.initialize(CGPoint(x: 158.5, y: 0))
-        }else{
-            targetContentOffset.initialize(CGPoint(x: 317, y: 0))
-        }
         
+        let scrollTarget:CGPoint = targetContentOffset.memory
+        
+        targetContentOffset.initialize(CGPoint(x: round(scrollTarget.x/158.5)*158.5, y:0))
     }
     
   }
