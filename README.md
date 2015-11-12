@@ -16,23 +16,40 @@ Created as part of [codepath for iOS PMs and UX Fall 2015](https://courses.codep
 
 
 Demo Script
-Start typing C, o
+"
+Have you ever imagined traveling to an exotic location but wouldn't know what to do when you are there?
+When you are riding the caltrain, do 
 
-select Copenhagen
+Are you tired of travel apps based purely on price? You know the ones I'm talking about, its usually a dull expereince and has a city and a dollar amount. Thats great for exploring a place you already know, but 
 
-swipe right 1st card
-swipe right 2nd card
+If youre intersted in turning fantasy into reality then its time to pay attention.
+"
+
+"We call this wonderlust"
+[start app]
+
+"Caroline, my partner and the individual responsible for all the beautiful UX on this project had another experience. You see last year she had planned out a trip to Copenhagen but a last minute conflict meant she had to cancel. She still dreams of going back, so lets find out how she can keep abrest of the latest places to be and be seen in Copenhagen."
+[Start typing C, o]
+
+[select Copenhagen]
+
+[swipe right 1st card]
+[swipe right 2nd card]
 tap for detail on 3rd card 
-tap to come back (TODO: this works, except slides right/left, not up/down)
+[tap to come back]
+Now I'm personally not a big fan of architecture but the media is designed to catch the eye. I'm still going to swipe left. Its ok, that building can't feel the rejection.
 swipe left 4th card (cancel)
 
-tap map icon
+"Now that I've built up a list of locales lets take a look where they are."
+[tap map icon] [TODO: show clustered icons on map, animate icons in]
+
+"The map view can give you an idea of which neighboorhood your interests are clustered, this helps you select a place to stay. With a few swipes, we can naturally get an idea of which hotels to suggest to you. We look forward to signing up hotel and vacation rental partners in the near future.
 
 tap list icon
 
 swipe top menu all the way right
 
-profile should show copenhagen
+profile should show copenhagen [TODO: show notification pop in]
 
 tap on feed icon
 
