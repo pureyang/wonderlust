@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="X5m-GI-ixa">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="X5m-GI-ixa">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
     </dependencies>
     <customFonts key="customFonts">
         <mutableArray key="DINCond-Bold.otf">
@@ -46,7 +46,7 @@
             <objects>
                 <viewController id="Eth-rp-9fu" customClass="VenueDetailViewController" customModule="wonderlust" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vBQ-OY-CQJ">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="800"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="IMF-9B-JqU">
@@ -98,7 +98,8 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="Ccr-T5-W37"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="800"/>
                     <connections>
                         <outlet property="detailText" destination="y6y-tX-1f4" id="ZOc-GM-W3V"/>
                         <outlet property="imagePage" destination="OAL-KO-P0B" id="2Yq-8i-Nmk"/>
@@ -180,12 +181,12 @@
                                     <action selector="searchButtonTap:" destination="jKR-sB-eTY" eventType="touchUpInside" id="aYt-0l-ozj"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Co" textAlignment="natural" minimumFontSize="17" id="rFq-Qk-3go">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Co" textAlignment="natural" minimumFontSize="17" clearButtonMode="unlessEditing" id="rFq-Qk-3go">
                                 <rect key="frame" x="55" y="21" width="304" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="textColor" red="0.25882352941176467" green="0.25882352941176467" blue="0.25882352941176467" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="DINCond-Bold" family="DINCond-Bold" pointSize="28"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
                                 <connections>
                                     <action selector="searchInputChanged:" destination="jKR-sB-eTY" eventType="editingChanged" id="Omp-BT-mYm"/>
                                 </connections>
