@@ -19,6 +19,7 @@ class StageViewController: UIViewController,UIScrollViewDelegate {
     
     var navButton:UIButton!
     var navGray:UIImageView!
+    var badge:UIImageView!
     var scrollWidth:CGFloat = 178
     let menuItemWidth:CGFloat = 158
     let menuItemList = [
@@ -54,17 +55,24 @@ class StageViewController: UIViewController,UIScrollViewDelegate {
             //
             scrollWidth += menuItemWidth
         }
+        
+        //Add badge
+        badge = UIImageView(image: UIImage(named:"Badge"))
+        badge.frame = CGRect(x: 198, y: 10, width: 10, height: 10)
+        navScrollContainer.addSubview(badge)
+        
         // Must set container size or button might be out of bound and not work!
         navScrollContainer.frame.size.width = scrollWidth + 40
         navScrollView.contentSize.width = scrollWidth + 40
         //
         // Move to item 1 instead of item 0
         navScrollView.contentOffset.x = menuItemWidth + 158
-        
+
     }
     
     func navButtonTap(sender: UIButton!) {
         navScrollView.setContentOffset(CGPoint(x: sender.tag, y: 0), animated: true)
+        fadeBadge(CGFloat(sender.tag))
     }
     
     func scrollViewDidScroll(scrollView: UIScrollView){
@@ -80,8 +88,23 @@ class StageViewController: UIViewController,UIScrollViewDelegate {
     func scrollViewWillEndDragging(scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
         
         let scrollTarget:CGPoint = targetContentOffset.memory
-        
-        targetContentOffset.initialize(CGPoint(x: round(scrollTarget.x/158.5)*158.5-0.5, y:0))
+        let targetX:CGFloat =  round(scrollTarget.x/158.5)*158.5-0.5
+        targetContentOffset.initialize(CGPoint(x: targetX, y:0))
+        // Fade badge
+        fadeBadge(targetX)
+    }
+    
+    func fadeBadge(targetX:CGFloat){
+        print(targetX)
+        if(targetX < 100){
+            UIView.animateWithDuration(0.5, animations: {
+                self.badge.alpha = 0.0
+            })
+        }else if(targetX > 200){
+            UIView.animateWithDuration(0.5, animations: {
+                self.badge.alpha = 1.0
+            })
+        }
     }
     
   }

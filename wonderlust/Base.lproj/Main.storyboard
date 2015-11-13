@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="X5m-GI-ixa">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="X5m-GI-ixa">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
     </dependencies>
     <customFonts key="customFonts">
         <mutableArray key="DINCond-Bold.otf">
@@ -136,10 +136,12 @@
                                 <rect key="frame" x="0.0" y="484" width="375" height="33"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" id="B6C-Ix-gVI">
-                                <rect key="frame" x="51" y="484" width="277" height="33"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Where is your next adventure?" textAlignment="natural" minimumFontSize="17" id="B6C-Ix-gVI">
+                                <rect key="frame" x="61" y="479" width="277" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <accessibility key="accessibilityConfiguration" label="What"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                         </subviews>
@@ -179,8 +181,9 @@
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Co" textAlignment="natural" minimumFontSize="17" id="rFq-Qk-3go">
-                                <rect key="frame" x="51" y="20" width="304" height="30"/>
+                                <rect key="frame" x="55" y="21" width="304" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" red="0.25882352941176467" green="0.25882352941176467" blue="0.25882352941176467" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="DINCond-Bold" family="DINCond-Bold" pointSize="28"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
@@ -239,7 +242,7 @@
                                         </connections>
                                     </containerView>
                                     <containerView opaque="NO" contentMode="scaleToFill" id="VFJ-YS-gZc">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="628"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                         <animations/>
                                         <connections>
@@ -247,7 +250,7 @@
                                         </connections>
                                     </containerView>
                                     <containerView opaque="NO" contentMode="scaleToFill" id="XWx-Vd-9Mm">
-                                        <rect key="frame" x="375" y="0.0" width="375" height="628"/>
+                                        <rect key="frame" x="375" y="0.0" width="375" height="603"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                         <animations/>
                                         <connections>
@@ -298,7 +301,7 @@
             <objects>
                 <viewController id="2gf-Bi-PG9" customClass="VenuePickerViewController" customModule="wonderlust" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ah1-A5-qvG">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="628"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleAspectFill" id="wG2-vK-xDF" customClass="KolodaView" customModule="Koloda">
@@ -308,12 +311,12 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="Cardpin" id="nKk-kR-9MB">
-                                <rect key="frame" x="243" y="524" width="74" height="74"/>
+                                <rect key="frame" x="243" y="504" width="74" height="74"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <animations/>
                             </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="Cardclose" id="hxU-Za-OEX">
-                                <rect key="frame" x="57" y="524" width="74" height="74"/>
+                                <rect key="frame" x="57" y="504" width="74" height="74"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <animations/>
                             </imageView>
@@ -326,7 +329,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="NhR-n5-c7c">
-                                <rect key="frame" x="243" y="524" width="74" height="68"/>
+                                <rect key="frame" x="243" y="504" width="74" height="68"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <animations/>
                                 <connections>
@@ -334,7 +337,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="AlC-Ie-yU6">
-                                <rect key="frame" x="57" y="524" width="74" height="68"/>
+                                <rect key="frame" x="57" y="504" width="74" height="68"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <animations/>
                                 <connections>
@@ -388,7 +391,7 @@
             <objects>
                 <viewController id="JPF-xC-H3i" customClass="MapViewController" customModule="wonderlust" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" clipsSubviews="YES" contentMode="scaleToFill" id="5AL-pS-i9W">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="628"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="TopLeft" maximumZoomScale="2" id="qcH-VR-FK3">
@@ -400,7 +403,7 @@
                                 </connections>
                             </scrollView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Card2" id="VaH-Xk-iVw">
-                                <rect key="frame" x="-340" y="130" width="335" height="540"/>
+                                <rect key="frame" x="-340" y="140" width="335" height="540"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <animations/>
                             </imageView>
