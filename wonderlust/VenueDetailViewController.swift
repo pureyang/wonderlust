@@ -10,6 +10,7 @@ import UIKit
 
 class VenueDetailViewController: UIViewController,UIScrollViewDelegate {
 
+    var cardNum : Int!
     
     @IBOutlet weak var textScrollView: UIScrollView!
     @IBOutlet weak var pictureScroll: UIScrollView!
@@ -25,12 +26,20 @@ class VenueDetailViewController: UIViewController,UIScrollViewDelegate {
         textScrollView.contentSize = detailText.frame.size
         textScrollView.contentSize.height+=375
         // Adding images
+        
+        print (cardNum)
         var image:UIImage
         var imageView:UIImageView
         var scrollWidth : CGFloat = 0
+        
+        // hack to make sure we don't crash
+        // we only have assets for the first 3 venues
+        if (cardNum >= 3) {
+            cardNum = 2
+        }
 
         for i in 1...5 {
-            image = UIImage(named: "L\(i)")!
+            image = UIImage(named: "L\(cardNum)_\(i)")!
             imageView = UIImageView(image:image)
             imageView.frame = CGRect(x: scrollWidth, y: 0, width: image.size.width, height: image.size.height)
             scrollWidth += image.size.width

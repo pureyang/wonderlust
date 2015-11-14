@@ -61,7 +61,7 @@ class VenuePickerViewController: UIViewController, KolodaViewDataSource, KolodaV
     }
     
     func handleTap(recognizer: UITapGestureRecognizer) {
-        self.performSegueWithIdentifier("detailSegue", sender: recognizer)
+        self.performSegueWithIdentifier("detailSegue", sender: kolodaView.currentCardNumber)
     }
 
     override func didReceiveMemoryWarning() {
@@ -75,5 +75,12 @@ class VenuePickerViewController: UIViewController, KolodaViewDataSource, KolodaV
     
     @IBAction func didTouchCancel(sender: UIButton) {
         kolodaView.swipe(SwipeResultDirection.Left)
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        //print("prepare for segue in venue picker: \(sender)")
+        let segueViewController = segue.destinationViewController as! VenueDetailViewController
+        let cardnum = kolodaView.currentCardNumber
+        segueViewController.cardNum = cardnum
     }
 }
