@@ -27,12 +27,11 @@ class VenueDetailViewController: UIViewController,UIScrollViewDelegate {
         textScrollView.contentSize.height+=375
         // Adding images
         
-        print (cardNum)
         var image:UIImage
         var imageView:UIImageView
         var scrollWidth : CGFloat = 0
         
-        // hack to make sure we don't crash
+        // HACK to make sure we don't crash
         // we only have assets for the first 3 venues
         if (cardNum >= 3) {
             cardNum = 2

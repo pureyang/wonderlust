@@ -95,7 +95,7 @@ class StageViewController: UIViewController,UIScrollViewDelegate {
     }
     
     func fadeBadge(targetX:CGFloat){
-        print(targetX)
+        //print(targetX)
         if(targetX < 100){
             UIView.animateWithDuration(0.5, animations: {
                 self.badge.alpha = 0.0

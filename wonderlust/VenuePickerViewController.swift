@@ -78,7 +78,6 @@ class VenuePickerViewController: UIViewController, KolodaViewDataSource, KolodaV
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        //print("prepare for segue in venue picker: \(sender)")
         let segueViewController = segue.destinationViewController as! VenueDetailViewController
         let cardnum = kolodaView.currentCardNumber
         segueViewController.cardNum = cardnum

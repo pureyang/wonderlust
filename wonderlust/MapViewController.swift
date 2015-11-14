@@ -29,6 +29,8 @@ class MapViewController: UIViewController, UIScrollViewDelegate{
         let mapImage:UIImage = UIImage(named: "Map")!
         mapImageView = UIImageView(image: mapImage)
         mapImageView.contentMode = .TopLeft
+        let tapMinimize = UITapGestureRecognizer(target: self, action: "minimizeCard")
+        mapImageView.addGestureRecognizer(tapMinimize)
         
         mapScroll.addSubview(mapImageView)
         mapScroll.contentSize = mapImageView.bounds.size
@@ -65,6 +67,12 @@ class MapViewController: UIViewController, UIScrollViewDelegate{
             })
             cardState = 1
         }else{
+            minimizeCard()
+        }
+    }
+    
+    func minimizeCard () {
+        if (cardState == 1 ) {
             UIView.animateWithDuration(0.5, animations: {
                 self.mapScroll.zoomScale = 1.1
                 self.uiCard.transform.tx += 360
