@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="X79-Su-i5X">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="X5m-GI-ixa">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
     </dependencies>
     <customFonts key="customFonts">
         <mutableArray key="DINCond-Bold.otf">
+            <string>DINCond-Bold</string>
             <string>DINCond-Bold</string>
         </mutableArray>
     </customFonts>
@@ -81,6 +82,13 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <animations/>
                                     </imageView>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Louisiana Museum of Modern Art" textAlignment="natural" minimumFontSize="17" id="GL5-Ke-jV3">
+                                        <rect key="frame" x="19" y="394" width="338" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="DINCond-Bold" family="DINCond-Bold" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
                                 </subviews>
                                 <animations/>
                             </scrollView>
@@ -106,11 +114,12 @@
                         <outlet property="pictureContainer" destination="N6j-OT-wfb" id="9pc-m4-r3q"/>
                         <outlet property="pictureScroll" destination="uQW-rC-0FW" id="hdt-yG-oEX"/>
                         <outlet property="textScrollView" destination="IMF-9B-JqU" id="lWn-jG-VVT"/>
+                        <outlet property="venueTitleText" destination="GL5-Ke-jV3" id="vLP-do-gaB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NNY-hx-ZL5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2363.5" y="3786.5"/>
+            <point key="canvasLocation" x="2363.5" y="3786"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="8dH-N4-9fb">
@@ -181,8 +190,8 @@
                                     <action selector="searchButtonTap:" destination="jKR-sB-eTY" eventType="touchUpInside" id="aYt-0l-ozj"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Co" textAlignment="natural" minimumFontSize="17" clearButtonMode="unlessEditing" id="rFq-Qk-3go">
-                                <rect key="frame" x="55" y="21" width="304" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Copenhagen" textAlignment="natural" minimumFontSize="17" clearButtonMode="unlessEditing" id="rFq-Qk-3go">
+                                <rect key="frame" x="55" y="21" width="304" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="textColor" red="0.25882352941176467" green="0.25882352941176467" blue="0.25882352941176467" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="DINCond-Bold" family="DINCond-Bold" pointSize="28"/>

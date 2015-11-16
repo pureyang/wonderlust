@@ -38,7 +38,7 @@
 	</array>
 	<key>UIAppFonts</key>
 	<array>
-		<string>DIN Condensed Bold</string>
+		<string>DINCond-Bold.otf</string>
 	</array>
 </dict>
 </plist>

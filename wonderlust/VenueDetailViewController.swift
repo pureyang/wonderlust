@@ -18,6 +18,7 @@ class VenueDetailViewController: UIViewController,UIScrollViewDelegate {
     
     @IBOutlet weak var imagePage: UIPageControl!
     @IBOutlet weak var detailText: UIImageView!
+    @IBOutlet weak var venueTitleText: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,6 +48,23 @@ class VenueDetailViewController: UIViewController,UIScrollViewDelegate {
         pictureScroll.contentSize = CGSize(width: scrollWidth, height: 375)
         imagePage.numberOfPages = 5
         imagePage.currentPage = 0
+        
+        switch cardNum {
+        case 0:
+            venueTitleText.text = "Original Coffee"
+            break
+        case 1:
+            venueTitleText.text = "Torvehallerne"
+            break
+        case 2:
+            venueTitleText.text = "Louisiana Museum of Modern Art"
+        case 3:
+            venueTitleText.text = "8TALLET"
+        case 4:
+            venueTitleText.text = "Normann Copenhagen"
+        default:
+            venueTitleText.text = "Louisiana Museum of Modern Art"
+        }
     }
 
     override func didReceiveMemoryWarning() {

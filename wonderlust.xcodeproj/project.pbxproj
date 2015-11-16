@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		2BF8F0AAD340F5473C6A9FCD /* Pods_wonderlust.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1BCD00BEDD1E2B4808CCBA8 /* Pods_wonderlust.framework */; };
 		A410400C1BE292A500A49031 /* VenueDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A410400B1BE292A500A49031 /* VenueDetailViewController.swift */; };
+		A418ADBE1BFA514A008B91DF /* DINCond-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = A485FEF11BE9474700B5534B /* DINCond-Bold.otf */; };
+		A418ADBF1BFA514D008B91DF /* DIN-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = A485FEF01BE946BC00B5534B /* DIN-Bold.otf */; };
 		A4A88E6F1BDB4E6C00601272 /* CityPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A88E6E1BDB4E6C00601272 /* CityPickerViewController.swift */; };
 		A4A88E711BDB4E7B00601272 /* CitySummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A88E701BDB4E7B00601272 /* CitySummaryViewController.swift */; };
 		A4A88E731BDB4E8900601272 /* VenuePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A88E721BDB4E8900601272 /* VenuePickerViewController.swift */; };
@@ -306,9 +308,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A418ADBF1BFA514D008B91DF /* DIN-Bold.otf in Resources */,
 				A4D455351BD94FA5007B6DD1 /* LaunchScreen.storyboard in Resources */,
 				A4C3FD1B1BF06BDA000C16FC /* OverlayView.xib in Resources */,
 				A4D455321BD94FA5007B6DD1 /* Assets.xcassets in Resources */,
+				A418ADBE1BFA514A008B91DF /* DINCond-Bold.otf in Resources */,
 				A4D455301BD94FA5007B6DD1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
